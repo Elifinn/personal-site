@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>My Website</title>
+	<style>
+		body {
+			background: linear-gradient(to bottom right, #00ff80, #00bfff);
+			margin: 0;
+			padding: 0;
+		}
+		h1 {
+			color: white;
+			font-size: 48px;
+			margin-top: 50px;
+			margin-bottom: 50px;
+			text-align: center;
+			animation-name: bounce;
+			animation-duration: 2s;
+			animation-iteration-count: infinite;
+			animation-timing-function: ease-in-out;
+		}
+		.icon {
+			height: 50px;
+			width: 50px;
+			margin-right: 10px;
+			animation-name: spin;
+			animation-duration: 3s;
+			animation-iteration-count: 1;
+			animation-timing-function: ease-in-out;
+		}
+		.links {
+			display: flex;
+			flex-direction: row;
+			align-items: center;
+			justify-content: center;
+		}
+		
+		@keyframes spin {
+		  from {
+		    transform: rotate(0deg);
+		  }
+		  to {
+		    transform: rotate(360deg);
+		  }
+		}
+		
+        @keyframes bounce {
+          0% {transform :translateX(-10px)}
+          50% {transform :translateX(10px)}
+          100% {transform :translateX(-10px)}
+        }
+        
+        .project-box {
+            margin-top: 50px;
+            margin-bottom: 50px;
+            display:flex; 
+            flex-direction: column; 
+            align-items:center; 
+            justify-content:center; 
+            width:100%;
+        }
+        
+        .project-title {
+            font-size: 24px; 
+            font-weight:bold; 
+            margin-bottom:10px; 
+            text-align:center; 
+            color:white
+        }
+        
+        .project-description {
+            font-size:18px; 
+            margin-bottom:20px; 
+            text-align:center; 
+            color:white
+        }
+        
+        .project-link {
+            font-size:18px; 
+            text-align:center; 
+            color:white
+        }
+        
+        .project-container{
+          border-style:solid ;
+          border-color :transparent ;
+          border-width :2px ;
+          padding :10px ;
+          margin-top :20px ;
+          margin-bottom :20px ;
+          background-color :rgba(128,128,128,0.2) ;
+          width :100% ;
+          box-sizing:border-box ;
+        }
+        
+    </style>
+</head>
+<body>
+	<h1>Eli Finn</h1>
+	<div class="links">
+		<a href="mailto:youremail@example.com"><img class="icon" src="https://cdn-icons-png.flaticon.com/512/561/561127.png" alt="Email"></a>
+		<a href="https://www.linkedin.com/"><img class="icon" src="https://cdn-icons-png.flaticon.com/512/174/174857.png" alt="LinkedIn"></a>
+        <a href="https://www.example.com"><img class="icon" src="https://cdn-icons-png.flaticon.com/512/2946/2946908.png" alt="Portfolio"></a>
+        
+    </div>
+    
+    <div class="project-container">
+      <div class="project-title">Marketing Intern @ Stampli</div>
+      <div class="project-description">Created content, managed marketing tools, and improved online presence to bolster marketing efforts.</div>
+      <div class="project-link">https://www.stampli.com/</div>
+    </div>
+
+    <div class="project-container">
+      <div class="project-title">President @ IDEAS Entrepreneurship Club</div>
+      <div class="project-description">Led a board for 2 years that planned events, brought in speakers, and worked to improve SJSU entrepreneurship efforts. </div>
+      <div class="project-link">https://ideassjsu.org/</div>
+    </div>
+
+    <div class="project-container">
+      <div class="project-title">Project Title</div>
+      <div class="project-description">Enter project description here</div>
+      <div class="project-link">Project Link</div>
+    </div>
+
+</body>
+</html>
